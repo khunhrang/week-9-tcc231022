@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>ขนมครกสิงคโปร by ครัวคุณหรั่ง</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.4/examples/jumbotron/jumbotron.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="{% url 'home-page' %}"><img src="https://lh3.googleusercontent.com/E4MX50YbW4H3hzEKmCLd9OgWlZrMfSMDxN_ED6dkkLl78mkTuSbAzYWgoRI8LnFjilJytD9blL2F6a_7MWpoe1SQWMpcTv8_oORbZMU9RQna9PCNnQMlzcXvuOF-bleVy4UXcgNuTs3XsRhi2kLhRCq37g4rEE5d9mJuuk9i6P3pdXu9VI8Qeli5czwPKtJ73GbjoOLJYuwPTnb-VOQQoJKNWuQDgAn_PQCFzylLTZKbUVhPSzd6r1JInaXnkUBglxnmyzC2-i94rTxqK7TLZR-yKTiftkETNKROS_6aRu5jUnyMGAE7-Ev5XGuDmWJVcYIgi1Q-It4g4drelTU3CbmXN-Z6vaFASlDAyNIYnTtMNCJAzF41zaIzuiakR17OH8YV9K_VUlbpWq8NJqEQom-VlqZ4-QUSrIcrA46Braf0f57BtkYkGvaBcQ-wzCHHmWKoFN0VrmoGhO7YfPn1g1UjTCbVtyY1cPIyA67wZd_UucocMKyHB7dRjN3BKo9kq2rHKea9sHOP57GKG4lDrTz6CEBs2vZFnKfRyF8n_nCLlTHCLl2Sv9Jx8Aez7SBUKm332RcPv3ALSQ5afjSznlbJzmllY-83-IFHOoBgjE2G3mWHiBt_tTZe4TL5nPIcc5PiKEBCBvSDAEM2ckTFwk889hIsyuQ2OSWb3AhPUdIkr_GGGmP7l8OOGMVrWJYFb9BfqFSb2r8_qZmssf5_b-n2BLL3jDQCqRUD9YfWXrPaMYg=s632-no" width="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home-page' %}">หน้าแรก<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about-page' %}">เกี่ยวกับครัวคุณหรั่ง</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">สินค้าของครัวคุณหรั่ง</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="{% url 'mobile-page' %}">ขนมครกสิงคโปร์</a>
+          <a class="dropdown-item" href="#">ซูเฟล่แพนเค้ก</a>
+          <a class="dropdown-item" href="#">ขนมไข่สูตรโบราณ</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a class="navbar-brand" href="https://www.facebook.com/khunhrang.kitchen"><img src="https://lh3.googleusercontent.com/qb8HXoHNJRezsoJSBF4txJlbkY15ALwAZMfzAmbAH6jMBnkdXlzC7r9G58TtcMLvCOf5eTQnCxocCJx64m1MHr2kjTeyONgS4xRW6YjcwXjQ7-M6t7B7b3QfhSS6dAzvxBcb0K0PidjuI_B18fvPWHUV7Q3aNOJz8BFa6wz_18q-iFiJgGSx5hNi-PdVvVoB92Av7LYWfkXkx0Tk6f0MOGD9mfHLdiMSN1fJe4tyOnoK_16kRVt3RcqEY8IfMwn1dybWqYmDkgfpU3u2Hp4ocLLvw8DA0IJyKdJbsYCzJCzyUW118hZZad2OSp_UYNEuYNissAGVPr7qLQu-R3TRZGfloPO6lnfRUDfrmR0e38kU1lqI21_fn2l7qhDn2ndqfFgaJ8g-r0jIoKplK43z_dlRAaw_AAelEACb9OQ6oi8icOc-7anrwSspe2Tcf_3W9_AfaokO1RANZiC0jMjzMXAZcJO95zc2CVdW89qBdpPodD5TbK7OyE_dwD0Yc9-1Y16-5xw_IUe8RzZ61S-kOQmK0nwZCz2O7xlRElGhnMjtMA-Q_nMrlrCj1yth1gaUaG9ahVmy19D4KuxkJF1QAcS8m7K_fsCfPeiU649vZow9VV-aLWFPNXEu1v_f6QKj-JekVtW97ZjTxmuXo39MSjPdyW8bUTXFJRV6b6WiAsbhEGwXHcAt0CQ=s18-no"></a>
+      <a class="navbar-brand" href=""><img src="https://lh3.googleusercontent.com/Z3waJ0yNoS4qaLo1Rm12-JycFcG4TB-sUdrOLWLSsZzWS6Vm2Al4KikGyw99cXjU8qEKHzstR2uEkTUJ5gyOMIqZnz42V1oGlaAbWadjoSFdYG5jn7ABX_mIATN266Q8AGuIzGX-4aGt9yz_CPoPhea8JtIodj70cr4Oz27PdKoC4Fe_k-zeAFAqWxciLDTu7or1k4sd3lmpEQYE0eqKZrAL9kwx5Fe9Y2E4v1QRPfR7GVI0KaGlpBJgYUqlLXqyGAnvmUTT4cKJ0hVuDlkiAa0t1w2PaM2NXTH1Ie9pjJIY4rKJbEJG0r1eJ79_JdBf-wMoSbpN3TMEXR1MU_GAPxdrcbidLdESaMbB-dLiAm4tGu_BwxSq2ew7uZT8W2-PSK0q2PMwgH-5PfbngyX0U0Ieo_6fp14500IYbHA0sGQs_mKQ0Ifm6XWOihYRbibGxjz9Oo5P5qa7cIquCmQJZXXmuRKvUVztjTGWZF1hDK37K6NslFM-S_rLcviN5SvPYPplTZ7uhm3RRI0j6zshOcOOx-rfaQ7eRhRTij0ELucC_2l7s4aUbmizKV76VzW7qQbOY1ZyAx5ewy3RSQX9IHrOMgyGFWnfOw2ERvV1ogRDD4bp4mp1LZg9-CvN10VliZffEs9j9yFO4KsS7xmKfTSOZkqo4MmS-VWKA6QK1XXrdN2BazsCA8U=s18-no"></a>
+      <a class="navbar-brand" href=""><img src="https://lh3.googleusercontent.com/wL6l53GCvGxYds7KlAk0yMvfebg8B56MfUJ9gOlMSEv1_4OrINCEfotIZenqYqSumD1GUfb5hN-x5TRDQOcmtZuxqtMPl5IvkjGpk6P8_A_GC62CweIcw2PZdfq3f5sIt9Ly5KHzFfPRmb97EuLw3z2aZqupU1FRjHwqSoPTSNdposNQ5Rfs_e6eSNLyUMO-tBku32b6xtAaSdvaJn2b6hxw-fQnLkbMRKpJ_Rrv_i2qUewrS5jsVKHqoLNLInFl9OphYoTO3ofHeBqPVemfbsm0UbbqnwSPMrBdX3benUgp6zo0iJOOO6di7oedeZIe5ixkt83PVcKFgtNGHzgLzUQcZxh7J3zx1ti7RA3Uv3K4uYgG7l_RpRq8fFTZGNCBDzrTTt3umMP733e88MeFA7TH6TqXE0ar3FzQEL9Dp-pFY6FpYTJDBCxDMjE361ahZukNOqaA9VKSFCyKvanUSPCIjSZNiP5RSfB87EE6a1KU0oracWDX2SF-0ZTNb2GQureJB4QJs5GBJ__tY03Fu4wBNOEUj_7Etn7VjO8VBhPyy-xEH4m_flT6jaz9Eff7RAD5R0auzurWXuQsj5NYi7IF6vIlqMjMm2v6ur2ywzoy7oRyPLLN4YMlli4q8PB5-viAMrRexDVHo6Bq4YPpxRy3gHuCZ8dUiJtzzba_LcX4lnW2WVrNF-w=s18-no"></a>
+      <a class="navbar-brand" href=""><img src="https://lh3.googleusercontent.com/EeZ3ke4gx0KgasEbhtkFwsaWnL3wrbLBsmlDaFCbZpYhF4RGLgayU2M1lpQJ3DUPwILLlic_m4RPcDxYRMF2XBBOGaLjMOTTes8uAWbxXAEcRTk8TSQDzActmsusizzWwzLg5mYzT3IlaAofjsQZRBMx6_in6W8Vp_eYwfHPU_Nq5-pKSndJzNgq-ZFZF9mCFxbbQPKFFTASXsgEZ72H3x1nQ-0WaRIB0v8ixxn6rhiB0V0n_IyqWP3OrPc3NgPyZdYeP9ql5dawsL4qcJ9m8EEMojUbj_jONIcun6FiChBvQKqI8ObT9PtnqQdvJzj_pFRxIWw3is5Lf_dw5nvHCqHAHJZmXBm0QtAjRNJ76zW8cVYjKlBdJ5Di7YbC92dml4vYSsS6J0IeaICm1YTQrm8Up9VCGVJ9uIagu38tQMpH3BnbPlS7TpTKoaQ9trS84t5E6eS3UkQ1CBunOI1tsEl-vuXI3xSHZGIG5YxLL_jNP-lUXa7wffrk277KKFyuwIefnYvRNAvtLB3m9ogRtK69uQdak0N1ADZNM5v0AbnIkfQi13k1IqoV4xJ1hOtmhFHjSuTT4HVWEERXkcKmAWKgnuH1R1bj1vFAMZR9Zv0TDXWNnk0xN487qQp-xoFtggkkYqhe6H9qoixRdXdjvHciq0wWZTGNFoYUXifCwu54LF8H9J_ZIYc=s20-no"></a>
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h4 class="display-4">ยินดีต้อนรับทุกท่านเข้าสู่ครัวคุณหรั่ง</h4>
+      <p>ขนมครกสิงคโปร์ที่อร่อยที่สุดในโลก ใช้วัตถุดิบชั้นดี สดใหม่ไม่ใส่สีสังเคราะห์ ใช้สีจากธรรมชาติเท่านั้น สีเขียวทำจากใบเตย สีเหลืองทำจากฟักทอง สีม่วงทำจากมันม่วง สีขาวเป็นเผือกและสีแดงเป็นบีทรูท ทุกสีทุกรสเรานำวัตถุดิบธรรมชาติบดใส่ลงไปผสมกับแป้งขนม จุดเด่นของขนมครกสิงคโปร์ครัวคุณหรั่งจะมีรสชาติหวานน้อยกำลังทาน เนื้อขนมนุ่มหนึบและก้นกรอบ</p>
+      <p><a class="btn btn-primary btn-lg" href="https://www.foodpanda.co.th/restaurant/f7jz/kanom-krok-singapore-by-krua-khun-lang#" role="button">สั่งเลย!! &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    {% block content %}
+    {% endblock content %}
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p>&copy; ครัวคุณหรั่ง Since 1980</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+</html>

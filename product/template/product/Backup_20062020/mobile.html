@@ -1,0 +1,19 @@
+{% extends 'product/base.html' %}
+
+
+{% block content %}
+
+<div class="row">
+	{% for mb in allproduct %}
+	<div class="container">
+		<h4>{{mb.product_name}}</h4>
+		<p>{{mb.product_price}}</p>
+		{% if mb.product_detail %}
+			<p>{{mb.product_detail}}</p>
+		{% endif %}
+		________________________________
+	</div>
+	{% endfor %}
+</div>
+
+{% endblock content %}
